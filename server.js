@@ -1,7 +1,9 @@
 const mongoose = require("mongoose")
 const Document = require("./Document")
-require("dotenv").config()
-mongoose.connect(process.env.URI)
+const dotenv = require("dotenv")
+dotenv.config()
+mongoose
+  .connect(process.env.URI)
 const io = require("socket.io")(3001, {
   // require the socket.io and giving them 3001 port
   cors: {
