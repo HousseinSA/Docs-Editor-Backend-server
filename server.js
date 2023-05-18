@@ -7,7 +7,7 @@ const io = require("socket.io")(3001, {
   // require the socket.io and giving them 3001 port
   cors: {
     // cors object that have origin and methods property
-    origin: "https://docs-editor.netlify.app",
+    origin:"https://docs-editor.netlify.app",
     methods: ["GET", "POST"],
   },
 })
